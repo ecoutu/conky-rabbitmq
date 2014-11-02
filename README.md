@@ -14,7 +14,7 @@ conky-rabbitmq depends on the `socket.http` and `cjson` (https://github.com/mpx/
 conky-rabbitmq has a few different configuration options. To modify these options, you can change the following values in the conky-rabbitmq.lua script:
 
 * `RABBITMQ_URL` - URL of the RabbitMQ management api, including basic authentication username and password, default is `http://guest:guest@localhost:15672/api/queues`
-* `RABBITMQ_COLUMNS` - Comma seperated list of columns/individual queue statistics to be returned from the API; leave as an empty string ('') to return all columns. Each value represents a JSON field, with nested JSON objects/tables seperated by a dot (.). Default is `name,messages,consumers,message_stats.ack_details,message_stats.publish_details,message_stats.deliver_details`
+* `RABBITMQ_COLUMNS` - Comma seperated list of columns/individual queue statistics to be returned from the API; leave as an empty string ("") to return all columns. Each value represents a JSON field, with nested JSON objects/tables seperated by a dot (.). Default is `name,messages,consumers,message_stats.ack_details,message_stats.publish_details,message_stats.deliver_details`
 * `RABBITMQ_REFRESH_INTERVAL` - Frequency (in seconds) to refresh data from the RabbitMQ manegement API, default is 5
 
 ## Usage
