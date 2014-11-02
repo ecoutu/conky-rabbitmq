@@ -5,7 +5,7 @@ conky-rabbitmq
 
 ## Dependencies
 
-conky-rabbitmq depends on the `socket.http` and `cjson` (https://github.com/mpx/lua-cjson/) Lua libraries. To install on Ubuntu 14.04:
+conky-rabbitmq depends on the [socket.http](https://github.com/diegonehab/luasocket) and [cjson](https://github.com/mpx/lua-cjson/) Lua libraries. To install on Ubuntu 14.04:
 
     sudo apt-get install lua-socket lua-cjson
 
