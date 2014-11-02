@@ -2,8 +2,11 @@ local http = require('socket.http')
 local json = require('cjson')
 
 do
+  -- URL of the RabbitMQ management api, including basic authentication username and password
   local RABBITMQ_URL = 'http://guest:guest@localhost:15672/api/queues'
+  -- Columns/individual queue statistics to be returned from the API
   local RABBITMQ_COLUMNS = 'columns=name,messages,consumers,message_stats.ack_details,message_stats.publish_details,message_stats.deliver_details'
+  -- Frequency (in seconds) to refresh data from the RabbitMQ manegement API
   local RABBITMQ_REFRESH_INTERVAL = 5
 
   local rabbitmq_url = RABBITMQ_URL..'?'..RABBITMQ_COLUMNS
